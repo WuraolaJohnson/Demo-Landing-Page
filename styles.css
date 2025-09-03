@@ -1,0 +1,238 @@
+
+body {
+    font-family: Inter, -apple-system, blinkmacsystemfont;
+
+    font-weight: 500;
+    color: #433c50;
+    position: relative;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+
+.nav_container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 64.4px;
+
+}
+
+.navbar {
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.2);
+
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 12px 32px;
+    font-size: 15px;
+}
+
+.navbar .navbar-brand span {
+    color: #433c50;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar .navbar-toggler:focus-visible,
+.navbar .navbar-toggler:focus,
+.navbar-toggler-icon:focus-visible {
+    border: none;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.navbar .container-fluid {
+    padding: 0;
+
+}
+
+
+.navbar .navbar-brand img {
+    width: 30px;
+    height: 25px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar .d-flex .material-symbols-outlined {
+    padding: 8px 14px ;
+    color: #433c50;
+}
+
+.navbar .d-flex .btn span img {
+    font-size: 28px;
+    color: #fff;
+}
+
+.navbar .d-flex .material-symbols-outlined {
+    margin-right: 8px;
+
+}
+
+/* .navbar .landing-nav-menu ul li a:hover{
+    color: ;
+} */
+.offcanvas {
+    background-color: #fff;
+    height: 100vh;
+
+}
+
+.nav-link:hover, 
+ul .active {
+    color: #8c57ff !important;
+}
+
+.offcanvas-header {
+    padding: 0;
+}
+
+
+
+.navbar .d-flex button {
+    background-color: #8c57ff;
+    border-color: #8c57ff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7.690px 16px;
+}
+
+/* .navbar .container-fluid .d-flex button .acc_icon{
+    font-size: 18px;
+} */
+
+section {
+    margin-top: 100px;
+}
+
+section .container .d-flex img {
+    height: 19px;
+}
+
+section .container .mb-2 {
+    font-size: 18px;
+}
+
+section .container .row {
+    padding: 0;
+}
+
+section .container .row li span {
+    display: inline-block;
+    border: 2px solid #D4C4F0;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+section .container .row li h5 {
+    font-size: 18px;
+}
+
+section .container .row li p {
+    padding: 0 48px;
+    color: #6d6777;
+}
+
+.buy_now {
+    /* display: flex; */
+    position: fixed;
+    bottom: 50px;
+    right: 24px;
+
+}
+
+.buy_now a {
+    padding: 6px 18px;
+    font-size: 15px;
+    box-shadow: 0 0.5px 20px #ff4c51;
+    background-color: #ff4c51;
+    color: #fff;
+}
+
+.buy_now a {
+    padding: 6px 18px;
+    font-size: 15px;
+    box-shadow: 0 0.5px 20px #ff4c51;
+    background-color: #ff4c51;
+    color: #fff;
+}
+
+.buy_now a:hover {
+
+    box-shadow: none;
+    background-color: #ff4c51;
+    color: #fff;
+}
+
+.navbar-toggler {
+    margin-right: 16px;
+}
+
+
+
+@media(min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 0) and (max-width:575px) {
+    section .container .row li:nth-child(2) {
+        margin-top: 48px;
+    }
+
+    .nav_container {
+        padding: 0 16px;
+    }
+
+}
+
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+    content: "";
+    border: 2px solid;
+    block-size: 8.25px;
+    border-block-start: 0;
+    border-inline-start: 0;
+    inline-size: 8.25px;
+    margin-block-start: -2.0625px;
+    margin-inline: 12px 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 991.98px) {
+    nav.layout-navbar .navbar.landing-navbar .landing-nav-menu {
+        position: fixed;
+        z-index: 9999;
+        display: block;
+        padding: 1rem;
+        block-size: 100%;
+        inline-size: 80%;
+        inset-block-start: 0;
+        inset-inline-start: -100%;
+        max-inline-size: 300px;
+        overflow-y: auto;
+        transition: all .3s ease-in-out;
+    }
+}
